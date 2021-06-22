@@ -1,6 +1,6 @@
 package proxy;
 
-public class LazyBookParserProxy implements ILazyBookParserProxy {
+public class LazyBookParserProxy implements IThirdPartyLibBookParser {
     private ThirdPartyLibBookParser parser;
     private String book;
 

@@ -1,6 +1,6 @@
 package proxy;
 
-public interface ILazyBookParserProxy {
+public interface IThirdPartyLibBookParser {
     int getNumberOfPages();
     int getNumberOfWords();
     int getNumberOfNouns();

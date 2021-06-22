@@ -2,7 +2,7 @@ package proxy;
 
 import java.util.concurrent.TimeUnit;
 
-public class ThirdPartyLibBookParser {
+public class ThirdPartyLibBookParser implements IThirdPartyLibBookParser {
     public ThirdPartyLibBookParser(String book) {
         // Expensive operation
         try {
@@ -12,14 +12,17 @@ public class ThirdPartyLibBookParser {
         }
     }
 
+    @Override
     public int getNumberOfPages() {
         return Math.round((float) Math.random());
     }
 
+    @Override
     public int getNumberOfWords() {
         return Math.round((float) Math.random());
     }
 
+    @Override
     public int getNumberOfNouns() {
         return Math.round((float) Math.random());
     }
