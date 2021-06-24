@@ -4,17 +4,17 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        IBeverage coffeeMilkTea = new CoffeeMilkTea();
+        IBeverage beverage = new CoffeeMilkTea();
         // Add Pearls add-on
-        IBeverage pearlsAddOn = new PearlsAddOn(coffeeMilkTea);
+        beverage = new PearlsAddOn(beverage);
         // Add Pudding add-on
-        IBeverage puddingAddOn = new PuddingAddOn(pearlsAddOn);
+        beverage = new PuddingAddOn(beverage);
         // Add Coconut Jelly add-on
-        IBeverage coconutJellyAddOn1 = new CoconutJellyAddOn(puddingAddOn);
+        beverage = new CoconutJellyAddOn(beverage);
         // Add Coconut Jelly add-on
-        IBeverage coconutJellyAddOn2 = new CoconutJellyAddOn(coconutJellyAddOn1);
+        beverage = new CoconutJellyAddOn(beverage);
 
-        List<String> compositions = coconutJellyAddOn2.getCompositions();
+        List<String> compositions = beverage.getCompositions();
         StringBuilder builder = new StringBuilder();
         for (String i: compositions) {
             if (builder.length() > 1){
@@ -23,6 +23,6 @@ public class Main {
             builder.append(i);
         }
 
-        System.out.println("Total: " + coconutJellyAddOn2.getCost() + ", Composition: " + builder);
+        System.out.println("Total: " + beverage.getCost() + ", Composition: " + builder);
     }
 }
