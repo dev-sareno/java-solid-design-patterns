@@ -15,5 +15,11 @@ public class Main {
             iterator1.next();
             System.out.println("Process completed");
         }
+
+        // Java Iterable and Iterator
+        Iterable<String> iterable = new JavaStringIterable("String 1", "String 2", "String 3");
+        for (String i: iterable) {
+            System.out.println(i);
+        }
     }
 }
