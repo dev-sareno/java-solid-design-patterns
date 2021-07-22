@@ -1,4 +1,4 @@
-package templatemethod;
+package template_method;
 
 public abstract class Record {
     public final void save() {

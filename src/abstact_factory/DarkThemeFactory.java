@@ -1,4 +1,4 @@
-package abstactfactory;
+package abstact_factory;
 
 public class DarkThemeFactory extends ThemeFactory {
     @Override

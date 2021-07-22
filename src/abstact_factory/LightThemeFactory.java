@@ -1,4 +1,4 @@
-package abstactfactory;
+package abstact_factory;
 
 public class LightThemeFactory extends ThemeFactory {
     @Override

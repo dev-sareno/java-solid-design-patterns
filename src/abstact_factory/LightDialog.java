@@ -1,4 +1,4 @@
-package abstactfactory;
+package abstact_factory;
 
 public class LightDialog extends Dialog {
     @Override

@@ -1,6 +1,6 @@
-package abstactfactory;
+package abstact_factory;
 
-public class LightButton extends Button {
+public class LightTextField extends TextField {
     @Override
     UIComponent getComponent() {
         return new UIComponent(0xFFFFFF);

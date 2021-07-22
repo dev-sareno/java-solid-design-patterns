@@ -1,4 +1,4 @@
-package abstactfactory;
+package abstact_factory;
 
 public class Main {
     private static final boolean USE_DARK_THEME = true;

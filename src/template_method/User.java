@@ -1,4 +1,4 @@
-package templatemethod;
+package template_method;
 
 public class User extends Record {
     private String username;

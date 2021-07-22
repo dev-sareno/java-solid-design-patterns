@@ -1,4 +1,4 @@
-package templatemethod;
+package template_method;
 
 public class Post extends Record {
     private String text;
